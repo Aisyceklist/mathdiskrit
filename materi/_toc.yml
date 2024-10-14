@@ -4,6 +4,7 @@
 format: jb-book
 root: intro
 chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+- file: Algoritma (1)
+- file: Aljabar boolean
+- file: HIMPUNAN
+- file : Logika Matematika (1)
