@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Algoritma &#8212; My sample book</title>
+    <title>Logika Matematika &#8212; My sample book</title>
   
   
   
@@ -60,11 +60,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'Algoritma';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'LOGIKA';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="jupytext: formats: md:myst text_representation: extension: .md format_name: myst format_version: 0.13 jupytext_version: 1.11.5 kernelspec: display_name: Python 3 language: python name: python3" href="HIMPUNAN.html" />
-    <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -115,6 +115,8 @@
     <div class="bd-container__inner bd-page-width">
       
       
+      
+        
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
@@ -168,21 +170,11 @@
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Algoritma</a></li>
-<li class="toctree-l1"><a class="reference internal" href="HIMPUNAN.html">jupytext:
-formats: md:myst
-text_representation:
-extension: .md
-format_name: myst
-format_version: 0.13
-jupytext_version: 1.11.5
-kernelspec:
-display_name: Python 3
-language: python
-name: python3</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="Analisa%20graph.html">Analisa graph</a></li>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="ALGORITMA.html">Algoritma</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ALJABAR.html">Aljabar Boolean &amp; Gerbang Logika</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ANALISA%20GRAPH.html">Analisa graph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="HIMPUNAN.html">Himpunan</a></li>
 </ul>
 
     </div>
@@ -254,7 +246,7 @@ name: python3</a></li>
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FAlgoritma.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FLOGIKA.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -284,7 +276,7 @@ name: python3</a></li>
       
       
       
-      <li><a href="_sources/Algoritma.md" target="_blank"
+      <li><a href="_sources/LOGIKA.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -360,7 +352,7 @@ name: python3</a></li>
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Algoritma</h1>
+    <h1>Logika Matematika</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -370,17 +362,11 @@ name: python3</a></li>
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-algoritma">Definisi Algoritma</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#algoritm-sequental-search">Algoritm Sequental Search</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#algoritma-binary-search">Algoritma Binary Search</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#big-o-algoritma">Big O algoritma…</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pseudocode-adalah">Pseudocode adalah….</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-big-o-dari-algoritm-sequental-search">Hitung Big O dari Algoritm Sequental Search</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sumber-yang-digunakan-untuk-mencari-materi-ini">sumber yang digunakan untuk mencari materi ini</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#negasi">Negasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konjungsi">Konjungsi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disjungsi">Disjungsi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implikasi">Implikasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#biimplikasi">Biimplikasi</a></li>
 </ul>
             </nav>
         </div>
@@ -392,46 +378,172 @@ name: python3</a></li>
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="algoritma">
-<h1>Algoritma<a class="headerlink" href="#algoritma" title="Link to this heading">#</a></h1>
-<section id="definisi-algoritma">
-<h2>Definisi Algoritma<a class="headerlink" href="#definisi-algoritma" title="Link to this heading">#</a></h2>
-<p>Algoritma menurut (Kani, 2020) adalah suatu upaya dengan urutan operasi yang disusun secara logis dan sistematis untuk menyelesaikan suatu masalah untuk menghasilkan suatu output tertentu.</p>
-<section id="algoritm-sequental-search">
-<h3>Algoritm Sequental Search<a class="headerlink" href="#algoritm-sequental-search" title="Link to this heading">#</a></h3>
-<p>Sequential search adalah teknik pencarian data yang dilakukan dengan cara membandingkan setiap elemen data satu per satu, mulai dari elemen pertama hingga elemen yang dicari ditemukan. Proses ini terus berlanjut hingga data ditemukan atau seluruh elemen telah diperiksa.</p>
-<p>Algoritma ini termasuk salah satu algoritma pencarian yang paling sederhana dan sering digunakan dalam situasi di mana data tidak memiliki struktur tertentu.</p>
+  <hr class="docutils" />
+<p>title: ‘Logika ‘</p>
+<hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="logika-matematika">
+<h1>Logika Matematika<a class="headerlink" href="#logika-matematika" title="Link to this heading">#</a></h1>
+<section id="negasi">
+<h2>Negasi<a class="headerlink" href="#negasi" title="Link to this heading">#</a></h2>
+<p>Negasi Merupakan penolakan dari pernyataan yang sudah ada.Nilai kebenaran negasi jelas bertentangan dengan nilai kebenaran pernyataan sebelumnya.
+Negasi biasanya disimbolkan dengan:
+<span class="math notranslate nohighlight">\(\neg,-,\thicksim\)</span>
+Tabel Kebenaran:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(P\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(\neg P\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>True</p></td>
+<td><p>False</p></td>
+</tr>
+<tr class="row-odd"><td><p>False</p></td>
+<td><p>True</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
-<section id="algoritma-binary-search">
-<h3>Algoritma Binary Search<a class="headerlink" href="#algoritma-binary-search" title="Link to this heading">#</a></h3>
-<p>Umumnya algoritma pencarian biner dikenal sebagai pencarian setengah interval atau pencarian logaritmik. Metode pencarian biner merupakan salah satu metode yang cepat dan efisien untuk menemukan nilai target tertentu dari sekumpulan item yang dipesan.</p>
-<p>Hal ini dikarenakan cara kerja algoritma pencarian biner yang memulai di tengah daftar yang diurutkan. Maka hal tersebut secara efektif memotong setengah ruang pencarian dengan menentukan apakah akan naik atau turun daftar berdasarkan nilai median.</p>
+<section id="konjungsi">
+<h2>Konjungsi<a class="headerlink" href="#konjungsi" title="Link to this heading">#</a></h2>
+<p>Konjungsi adalah gabungan dari dua atau lebih pernyataan tunggal dengan kata hubung <strong>and</strong>. Kongjungsi disimbolkan dengan(<span class="math notranslate nohighlight">\(\wedge\)</span>)</p>
+<p>Tabel Kebenaran:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(P\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(Q\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(P\wedge Q\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>True</p></td>
+<td><p>True</p></td>
+<td><p>True</p></td>
+</tr>
+<tr class="row-odd"><td><p>True</p></td>
+<td><p>False</p></td>
+<td><p>False</p></td>
+</tr>
+<tr class="row-even"><td><p>False</p></td>
+<td><p>True</p></td>
+<td><p>False</p></td>
+</tr>
+<tr class="row-odd"><td><p>False</p></td>
+<td><p>False</p></td>
+<td><p>False</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
+<section id="disjungsi">
+<h2>Disjungsi<a class="headerlink" href="#disjungsi" title="Link to this heading">#</a></h2>
+<p>Disjungsi adalah gabungan dari dua atau lebih pernyataan tunggal dengan kata hubung <strong>or</strong>. Disjungsi disimbolkan dengan(<span class="math notranslate nohighlight">\(\vee\)</span>)</p>
+<p>Tabel Kebenaran:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(P\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(Q\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(P\vee Q\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>True</p></td>
+<td><p>True</p></td>
+<td><p>True</p></td>
+</tr>
+<tr class="row-odd"><td><p>True</p></td>
+<td><p>False</p></td>
+<td><p>True</p></td>
+</tr>
+<tr class="row-even"><td><p>False</p></td>
+<td><p>True</p></td>
+<td><p>True</p></td>
+</tr>
+<tr class="row-odd"><td><p>False</p></td>
+<td><p>False</p></td>
+<td><p>False</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
-<section id="big-o-algoritma">
-<h2>Big O algoritma…<a class="headerlink" href="#big-o-algoritma" title="Link to this heading">#</a></h2>
-<p>Notasi Big-O adalah cara untuk mengekspresikan kompleksitas waktu (atau ruang) suatu algoritma. Notasi ini memberikan perkiraan kasar tentang berapa lama waktu yang dibutuhkan suatu algoritma untuk berjalan (atau berapa banyak memori yang digunakannya), berdasarkan ukuran input. Misalnya, suatu algoritma dengan kompleksitas waktu berarti berjalan meningkat secara linear seiring dengan ukuran input.</p>
+<section id="implikasi">
+<h2>Implikasi<a class="headerlink" href="#implikasi" title="Link to this heading">#</a></h2>
+<p>Implikasi adalah istilah yang digunakan untuk menggambarkan hubungan sebab akibat dengan bentuk kalimat “jika P, maka Q”. Implikasi disimbolkan dengan (<span class="math notranslate nohighlight">\(\Longrightarrow\)</span>)</p>
+<p>Tabel Kebenaran:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(P\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(Q\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(P\Longrightarrow Q\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>True</p></td>
+<td><p>True</p></td>
+<td><p>True</p></td>
+</tr>
+<tr class="row-odd"><td><p>True</p></td>
+<td><p>False</p></td>
+<td><p>False</p></td>
+</tr>
+<tr class="row-even"><td><p>False</p></td>
+<td><p>True</p></td>
+<td><p>True</p></td>
+</tr>
+<tr class="row-odd"><td><p>False</p></td>
+<td><p>False</p></td>
+<td><p>True</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
-<section id="pseudocode-adalah">
-<h2>Pseudocode adalah….<a class="headerlink" href="#pseudocode-adalah" title="Link to this heading">#</a></h2>
-<p>Istilah pseudocode terdiri dari dua gabungan kata, yaitu kata pseudo yang berarti semu dan kata code yang berarti kode. Pseudocode atau kode semu dapat diartikan sebagai deskripsi dari algoritma pemrograman yang dituliskan secara sederhana dibandingkan dengan sintaksis bahasa pemrograman. Tujuannya, agar lebih mudah dibaca dan dipahami manusia.
-ia bukanlah bahasa pemrograman, karena sebuah bahasa pemrograman harus memiliki aturan dalam penulisan kodenya. Sementara pseudocode sendiri tidak memiliki aturan yang spesifik atau baku dalam penulisannya, karena itu ia tidak dikategorikan sebagai bahasa pemrograman.</p>
-</section>
-<section id="hitung-big-o-dari-algoritm-sequental-search">
-<h2>Hitung Big O dari Algoritm Sequental Search<a class="headerlink" href="#hitung-big-o-dari-algoritm-sequental-search" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Waktu kompleksitas (time complexity)
-Kompleksitas waktu adalah ukuran seberapa lama waktu yang dibutuhkan suatu algoritma untuk berjalan, berdasarkan ukuran input. Hal ini dinyatakan menggunakan notasi Big-O, yang memberikan perkiraan kasar waktu berjalan. Suatu algoritma dengan kompleksitas waktu yang lebih rendah umumnya akan lebih cepat daripada suatu algoritma dengan kompleksitas waktu yang lebih tinggi.</p></li>
-<li><p>Ruang kompleksitas (space complexity)</p></li>
-</ul>
-<section id="sumber-yang-digunakan-untuk-mencari-materi-ini">
-<h3>sumber yang digunakan untuk mencari materi ini<a class="headerlink" href="#sumber-yang-digunakan-untuk-mencari-materi-ini" title="Link to this heading">#</a></h3>
-<p><a class="reference external" href="https://kominfo.kotabogor.go.id/index.php/post/single/820#:~:text=Algoritma%20menurut%20(Kani%2C%202020),untuk%20menghasilkan%20suatu%20output%20tertentu">https://kominfo.kotabogor.go.id/index.php/post/single/820#:~:text=Algoritma menurut (Kani%2C 2020),untuk menghasilkan suatu output tertentu</a></p>
-<p><a class="reference external" href="https://fikti.umsu.ac.id/algoritma-sequential-search-pengertian-fungsi-dan-cara-kerjanya/">https://fikti.umsu.ac.id/algoritma-sequential-search-pengertian-fungsi-dan-cara-kerjanya/</a></p>
-<p><a class="reference external" href="https://tekno.kompas.com/read/2022/12/03/03000047/pengertian-binary-search-cara-kerja-dan-keunggulannya">https://tekno.kompas.com/read/2022/12/03/03000047/pengertian-binary-search-cara-kerja-dan-keunggulannya</a></p>
-<p><a class="reference external" href="https://www.dicoding.com/blog/pseudocode-untuk-developer-pemula/#:~:text=Pengertian%20pseudocode&amp;amp;text=Pseudocode%20atau%20kode%20semu%20dapat,mudah%20dibaca%20dan%20dipahami%20manusia">https://www.dicoding.com/blog/pseudocode-untuk-developer-pemula/#:~:text=Pengertian pseudocode&amp;text=Pseudocode atau kode semu dapat,mudah dibaca dan dipahami manusia</a></p>
-<p><a class="reference external" href="https://www.designgurus.io/blog/big-o-algorithm-complexity">https://www.designgurus.io/blog/big-o-algorithm-complexity</a></p>
-</section>
+<section id="biimplikasi">
+<h2>Biimplikasi<a class="headerlink" href="#biimplikasi" title="Link to this heading">#</a></h2>
+<p>Biimplikasi adalah pernyataan majemuk dalam bentuk kalimat “P jika dan hanya jika Q”. Menurut istilah, Biimplikasi mengacu pada dua pernyataan yang saling berhubungan sebagai sebab akibat atau, dengan kata lain, kalimat implikasi yang dapat diputar. Biimplikasi disimbolkan dengan(<span class="math notranslate nohighlight">\(\iff\)</span>)</p>
+<p>Tabel Kebenaran:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(P\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(Q\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(P\iff Q\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>True</p></td>
+<td><p>True</p></td>
+<td><p>True</p></td>
+</tr>
+<tr class="row-odd"><td><p>True</p></td>
+<td><p>False</p></td>
+<td><p>False</p></td>
+</tr>
+<tr class="row-even"><td><p>False</p></td>
+<td><p>True</p></td>
+<td><p>False</p></td>
+</tr>
+<tr class="row-odd"><td><p>False</p></td>
+<td><p>False</p></td>
+<td><p>True</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>link Referensi:<a class="reference external" href="https://akupintar.id/info-pintar/-/blogs/memahami-logika-matematika-negasi-konjungsi-disjungsi-implikasi-dan-biimplikasi">https://akupintar.id/info-pintar/-/blogs/memahami-logika-matematika-negasi-konjungsi-disjungsi-implikasi-dan-biimplikasi</a></p>
+<p>Soal:Buatlah tabel kebenaran untuk~pernyataan berikut $<span class="math notranslate nohighlight">\(P\lor(R\to\ Q)\)</span>$</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{array}{c|c|c|c|cc}P&amp;Q&amp;R&amp;\ Q&amp;R\to\ Q&amp;P\lor(R\to\ Q)\\\hline\text{Т}&amp;\text{T}&amp;\text{Т}&amp;\text{T}&amp;\text{T}&amp;\text{T}
+\\\text{Т}&amp;\text{Т}&amp;\text{F}&amp;\text{T}&amp;\text{T}&amp;\text{T}\\\text{T}
+&amp;\text{F}&amp;\text{T}&amp;\text{F}&amp;\text{F}&amp;\text{T}\\\text{T}
+&amp;\text{F}&amp;\text{F}&amp;\text{F}&amp;\text{F}&amp;\text{T}\\\text{F}
+&amp;\text{T}&amp;\text{T}&amp;\text{T}&amp;\text{T}&amp;\text{T}\\\text{F}
+&amp;\text{T}&amp;\text{F}&amp;\text{T}&amp;\text{T}&amp;\text{T}\\\text{F}
+&amp;\text{F}&amp;\text{T}&amp;\text{F}&amp;\text{F}&amp;\text{F}\\\text{F}
+&amp;\text{F}&amp;\text{F}&amp;\text{F}&amp;\text{T}&amp;\text{T}\end{array}\end{split}\]</div>
 </section>
 </section>
 
@@ -465,34 +577,6 @@ Kompleksitas waktu adalah ukuran seberapa lama waktu yang dibutuhkan suatu algor
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="intro.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Welcome to your Jupyter Book</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="HIMPUNAN.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">jupytext:
-formats: md:myst
-text_representation:
-extension: .md
-format_name: myst
-format_version: 0.13
-jupytext_version: 1.11.5
-kernelspec:
-display_name: Python 3
-language: python
-name: python3</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
@@ -510,17 +594,11 @@ name: python3</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-algoritma">Definisi Algoritma</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#algoritm-sequental-search">Algoritm Sequental Search</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#algoritma-binary-search">Algoritma Binary Search</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#big-o-algoritma">Big O algoritma…</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pseudocode-adalah">Pseudocode adalah….</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-big-o-dari-algoritm-sequental-search">Hitung Big O dari Algoritm Sequental Search</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sumber-yang-digunakan-untuk-mencari-materi-ini">sumber yang digunakan untuk mencari materi ini</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#negasi">Negasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konjungsi">Konjungsi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disjungsi">Disjungsi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implikasi">Implikasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#biimplikasi">Biimplikasi</a></li>
 </ul>
   </nav></div>
 
